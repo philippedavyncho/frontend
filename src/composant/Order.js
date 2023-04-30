@@ -37,7 +37,7 @@ export default function Order({handleClose}){
         for(let i=0 ; i<items.length; i++){
             axios({
               method: 'post',
-              url: 'http://127.0.0.1:8000/api/cd/orders/',
+              url: '/.netlify/functions/commande',
               data: {
                 "nom": nom,
                 
